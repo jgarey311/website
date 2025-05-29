@@ -30,12 +30,15 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #ffffff;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 /* Headings */
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.1;
+  text-align: center;
 }
 
 /* Button Styles */
@@ -60,14 +63,17 @@ button:focus-visible {
 
 /* Image Styling */
 img {
-  margin-left: 30%;
-  max-width: 40%;
+  display: block;
+  margin: 1rem auto;
+  max-width: 90%;
+  height: auto;
 }
 
 /* Countdown Text Styling */
 .Text {
   color: #034d34;
-  margin-left: 47%;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 /* Light mode override */
@@ -87,12 +93,11 @@ img {
 /* Countdown Component Styles */
 .countdown {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
-  font-family: inherit;
-  font-size: 1.5rem;
-  margin-right: 90%;
+  font-size: 1.2rem;
 }
 
 .countdown-item {
@@ -106,15 +111,33 @@ img {
   font-weight: 400;
   color: #555;
 }
+
 h2 {
-  margin-right: 70%;
-  margin-left: -8%;
+  text-align: center;
+  margin: 1rem 0;
 }
 
-/* Optional: Centering wrapper for more flexibility */
+/* Optional: Centering wrapper */
 .center-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  text-align: center;
+}
+
+/* Responsive Fixes for Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .countdown {
+    gap: 0.5rem;
+  }
+
+  .Text {
+    margin: 1rem 0;
+  }
 }
