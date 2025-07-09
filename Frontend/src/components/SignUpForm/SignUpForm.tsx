@@ -5,7 +5,7 @@ function Register() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(e) {
+  function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
 
     if (!email) {

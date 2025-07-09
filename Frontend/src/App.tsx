@@ -1,9 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Banner from "./components/Banner/Banner";
-import Countdown from "./components/countdown/countdown";
 import TopNav from "./components/NavBar/Navbar";
-import Renders from "./components/Renders/Render";
-import Register from "./components/SignUpForm/SignUpForm";
 import Home from "./Home";
 import Store from "./Stroe";
 import About from "./AboutUs";
