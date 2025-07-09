@@ -1,14 +1,25 @@
 .bannerRow {
   display: flex;
-  width: 100vw; /* fill full width of viewport */
-  height: 400px;
+  width: 100vw;
+  max-width: 100vw;
+  height: 400px; /* fixed height on desktop */
   overflow: hidden;
-  margin-top: -2rem;
+  margin-top: 4rem;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .bannerRow img {
-  width: 33.3333vw; /* 1/3 of viewport width each */
-  height: auto;
+  width: 33.3333vw;
+  height: 100%; /* fill container height */
   display: block;
-  object-fit: cover; /* keeps aspect ratio, crops if necessary */
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Adjust height on small phones to avoid very tall images */
+@media (max-width: 480px) {
+  .bannerRow {
+    height: 200px; /* reduce height on small screens */
+  }
 }

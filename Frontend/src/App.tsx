@@ -7,6 +7,7 @@ import Register from "./components/SignUpForm/SignUpForm";
 import Home from "./Home";
 import Store from "./Stroe";
 import About from "./AboutUs";
+import "./App.css";
 
 function App() {
   return (
