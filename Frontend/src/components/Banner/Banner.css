@@ -1,0 +1,14 @@
+.bannerRow {
+  display: flex;
+  width: 100vw; /* fill full width of viewport */
+  height: 400px;
+  overflow: hidden;
+  margin-top: -2rem;
+}
+
+.bannerRow img {
+  width: 33.3333vw; /* 1/3 of viewport width each */
+  height: auto;
+  display: block;
+  object-fit: cover; /* keeps aspect ratio, crops if necessary */
+}
