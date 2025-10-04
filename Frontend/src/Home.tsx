@@ -13,7 +13,7 @@ function Home() {
           <br />
           <h1 className="renders">Launch Date:</h1>
           <br />
-          <Countdown targetDate={"09/08/2025"} />
+          <Countdown targetDate={"12/09/2025"} />
         </div>
 
         <div className="parallaxSection">
